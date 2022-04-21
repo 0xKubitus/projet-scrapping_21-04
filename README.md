@@ -6,8 +6,9 @@ Projet : Le scrappeur fou
 1er exo : "Dark Trader" => il me reste à faire le fichier rspec pour tout bien vérifier !
                              => il faudrait aussi tout organiser sous forme de méthodes !
 
-2ème exo : "Mairie Christmas" => A FAIRE !
-                             => 
+2ème exo : "Mairie Christmas" => A FINIR EN MODE XPATH !
+                              => A REFAIRE EN MODE CSS POUR BIEN COMPRENDRE LA TECHNIQUE !
+                              => A TESTER AVEC UN FICHIER SPEC !
 
 
 
