@@ -1,4 +1,4 @@
-require_relative '../lib/dark_trader'
+require_relative '../lib/mairie_christmas'
 
 describe "the ... method" do
   it "should ..." do
@@ -17,6 +17,3 @@ describe "the ... method" do
     expect(...(x)).to eq(true)
   end
 end
-
-# j'ai pas eu besoin de tester cet exo avec Rspec, 
-# puis je n'ai plus eu le temps de le reprendre avec des methodes ... :(

@@ -10,7 +10,7 @@ doc = Nokogiri::HTML(URI.open("http://annuaire-des-mairies.com/val-d-oise"))
 
 href = doc.css('.lientxt[href]')
 href_arr = href.map do |link|
-  link['href'].gsub(/^./, '') # un petit coup de .gsub pour mettre le lien nickel ;)
+  link['href'].gsub(/^./, '')
 end
 
 # reconstituer le lien complet pour acceder a chaque page
@@ -41,15 +41,13 @@ def get_city_names(url)
 end
 
 # Pour afficher le resultat
-def resultat(city_link)
-  city_link.map do |element|
-    result = []
-    result << {get_city_names(element) => get_townhall_email(element)}
-    puts result
-  end
+city_link.map do |element|
+  result = []
+  result << {get_city_names(element) => get_townhall_email(element)}
+  puts result
 end
 
-resultat(city_link)
-
-# il faut faire une methode en plus pour le debut et tout compiler dans une methode 'perform'
-# aussi il faudrait faire des tests avec Rspec 
+=begin
+  IL Y EXISTE 185 MAIRIE DANS VAL D'OISE BANDE DE PATATE!!
+  SI VOUS ETES IMPATIENT ou IMPATIENTE, TAPER CTRL+C DANS LE TERMINAL DE L'INFINI
+=end
